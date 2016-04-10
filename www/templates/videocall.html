@@ -1,0 +1,25 @@
+<ion-view view-title="Vidoto">
+  <ion-content class="padding has-header" ng-controller="CallController">
+
+    <div class="card">
+      <video id="contact-video" autoplay></video>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        Your Username: <strong>{{ username }}</strong>
+      </div>
+    </div>
+
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Contact Username</span>
+        <input type="text" ng-model="contact_username">
+      </label>
+    </div>
+
+    <button class="button button-positive button-block" ng-click="startCall()">
+      Call
+    </button>
+  </ion-content>
+</ion-view>
